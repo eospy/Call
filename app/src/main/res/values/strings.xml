@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Call App</string>
+    <string name="premium_toolbar">CallMaster Премиум</string>
+    <string name="premium_update_now">Обновить сейчас</string>
+    <string name="premium_list_spam">СПИСОК СПАМА СООБЩЕСТВА</string>
+    <string name="premium_list_spam_text">Автообновление списка самых популярных спамеров с данными в реальном времени от сообщества CallMaster</string>
+    <string name="premium_unlimit_list_block">НЕОГРАНИЧЕННЫЙ ЗАБЛОКИРОВАННЫЙ СПИСОК</string>
+    <string name="premium_unlimit_list_block_text">Заблокируйте столько номеров, сколько вам нужно. Снимите ограничение на блокировку 100 номеров.</string>
+    <string name="premium_auto_control_memory">АВТОМАТИЧЕСКОЕ УПРАВЛЕНИЕ ПАМЯТЬЮ</string>
+    <string name="premium_auto_control_memory_text">Автоматическое удаление ненужных записанных файлов.</string>
+    <string name="premium_not_ads">БЕЗ РЕКЛАМЫ</string>
+    <string name="premium_not_ads_text">Наслаждайтесь полностью без рекламы при использовании CallMaster!</string>
+    <string name="premium_priority_support">ПРИОРИТЕТНАЯ ПОДДЕРЖКА</string>
+    <string name="premium_priority_support_text">Нужна помощь? Не ждите в очереди и первым решите свои проблемы.</string>
+    <string name="premium_instructions">Купите премиум версию всего за 120 руб. в месяц. Если вы хотите отменить подписку, выполните следующие действия:\n 1. Откройте Google Play.\n 2. В правом верхнем углу нажмите на значек профиля.\n 3. Нажмите «Платежи и подписки», а затем «Подписки».\n 4. Найдите подписку, которую нужно отменить.\n 5. Нажмите «Отменить подписку».\n 6. Следуйте инструкциям.</string>
+
+    <string-array name="audio_format">
+        <item>Wav</item>
+        <item>Mp3</item>
+    </string-array>
+</resources>

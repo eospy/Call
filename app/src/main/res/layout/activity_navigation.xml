@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="listener"
+            type="com.example.callapp.NavigationActivity" />
+        
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#E5EBF6"
+        tools:context=".NavigationActivity">
+
+        <FrameLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="50dp"/>
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#AAB5C9"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <LinearLayout
+                android:id="@+id/ll_log"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_circle"
+                android:minWidth="70dp"
+                android:minHeight="37sp"
+                android:orientation="vertical"
+                android:onClick="@{view -> listener.onViewClick(view)}">
+
+                <ImageView
+                    android:id="@+id/iv_log"
+                    android:layout_width="11dp"
+                    android:layout_height="11dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="6dp"
+                    android:src="@drawable/ic_log" />
+
+                <TextView
+                    android:id="@+id/tv_log"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="5dp"
+                    android:text="Журнал"
+                    android:textColor="#3B3C3D"
+                    android:textSize="9sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_contact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_circle"
+                android:minWidth="70dp"
+                android:minHeight="37sp"
+                android:orientation="vertical"
+                android:onClick="@{view -> listener.onViewClick(view)}">
+
+                <ImageView
+                    android:id="@+id/iv_contact"
+                    android:layout_width="11dp"
+                    android:layout_height="11dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="6dp"
+                    android:src="@drawable/ic_contact" />
+
+                <TextView
+                    android:id="@+id/tv_contact"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="5dp"
+                    android:text="Контакты"
+                    android:textColor="#3B3C3D"
+                    android:textSize="9sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_block"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_circle"
+                android:minWidth="70dp"
+                android:minHeight="37sp"
+                android:orientation="vertical"
+                android:onClick="@{view -> listener.onViewClick(view)}">
+
+                <ImageView
+                    android:id="@+id/iv_block"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="4dp"
+                    android:src="@drawable/ic_block" />
+
+                <TextView
+                    android:id="@+id/tv_block"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="5dp"
+                    android:text="Блокировать"
+                    android:textColor="#3B3C3D"
+                    android:textSize="9sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_settings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_circle"
+                android:minWidth="70dp"
+                android:minHeight="37sp"
+                android:orientation="vertical"
+                android:onClick="@{view -> listener.onViewClick(view)}">
+
+                <ImageView
+                    android:id="@+id/iv_settings"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="6dp"
+                    android:src="@drawable/ic_settings" />
+
+                <TextView
+                    android:id="@+id/tv_settings"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="5dp"
+                    android:text="Настройки"
+                    android:textColor="#3B3C3D"
+                    android:textSize="9sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_premium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_circle"
+                android:minWidth="70dp"
+                android:minHeight="37sp"
+                android:orientation="vertical"
+                android:onClick="@{view -> listener.onViewClick(view)}">
+
+                <ImageView
+                    android:id="@+id/iv_premium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="6dp"
+                    android:src="@drawable/ic_premium" />
+
+                <TextView
+                    android:id="@+id/tv_premium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="5dp"
+                    android:text="Премиум"
+                    android:textStyle="bold"
+                    android:textColor="#3B3C3D"
+                    android:textSize="9sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
